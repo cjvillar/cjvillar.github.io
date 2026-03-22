@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,12 +28,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -43,22 +41,20 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
-
-<meta property="og:title" content="Not to bash on Bash." />
-<meta property="og:description" content="Just because you can doesn&#39;t mean you should." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/posts/bash/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/images/bash_post.jpg" /><meta property="article:section" content="posts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/images/bash_post.jpg" />
-<meta name="twitter:title" content="Not to bash on Bash."/>
-<meta name="twitter:description" content="Just because you can doesn&#39;t mean you should."/>
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/bash/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="Not to bash on Bash.">
+  <meta property="og:description" content="Just because you can doesn&#39;t mean you should.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="Bash">
+    <meta property="article:tag" content="Terminal">
+    <meta property="og:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
+  <meta name="twitter:title" content="Not to bash on Bash.">
+  <meta name="twitter:description" content="Just because you can doesn&#39;t mean you should.">
 
 
 <script type="application/ld+json">
@@ -115,10 +111,8 @@
 }
 </script>
 </head>
-
-<body class=" dark" id="top">
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -145,7 +139,7 @@
     <div class="post-description">
       Just because you can doesn&#39;t mean you should.
     </div>
-    <div class="post-meta">2 min&nbsp;·&nbsp;389 words&nbsp;·&nbsp;Chris
+    <div class="post-meta"><span>2 min</span>&nbsp;·&nbsp;<span>389 words</span>&nbsp;·&nbsp;<span>Chris</span>
 
 </div>
   </header> 
@@ -161,7 +155,7 @@ I’d need to remove the new lines and add a comma as a separator with each data
 <p>Let’s try Two Sum. The problem is as follows: Given an array of integers (nums) and an integer target, return the indices of the two numbers such that they add up to the target. Assume each input has exactly one solution and you may not use the same
 element twice.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="nv">nums</span><span class="o">=(</span><span class="m">1</span> <span class="m">22</span> <span class="m">4</span> <span class="m">8</span> <span class="m">10</span> <span class="m">32</span> <span class="m">40</span> <span class="m">3</span> <span class="m">100</span> <span class="m">1</span> <span class="m">89</span> <span class="m">3</span> <span class="m">9</span> 0<span class="o">)</span>
 </span></span><span class="line"><span class="cl"><span class="nv">target</span><span class="o">=</span><span class="m">6</span>
 </span></span><span class="line"><span class="cl">
@@ -216,7 +210,7 @@ element twice.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -231,9 +225,14 @@ element twice.</p>
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

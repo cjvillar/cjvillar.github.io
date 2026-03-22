@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head>
-	<meta name="generator" content="Hugo 0.128.2"><meta charset="utf-8">
+	<meta name="generator" content="Hugo 0.158.0"><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -19,7 +19,7 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/">
 <noscript>
     <style>
@@ -30,12 +30,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -45,18 +43,14 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="CJ_VILLARREAL">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta property="og:title" content="CJ_VILLARREAL" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CJ_VILLARREAL"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CJ_VILLARREAL">
 
 <script type="application/ld+json">
 {
@@ -65,17 +59,15 @@
   "name": "CJ_VILLARREAL",
   "url": "https://www.cjvillarreal.com/",
   "description": "",
-  "thumbnailUrl": "https://www.cjvillarreal.com/favicon.ico",
+  "logo": "https://www.cjvillarreal.com/favicon.ico",
   "sameAs": [
       "https://github.com/cjvillar/", "https://www.linkedin.com/in/cjvillarreal-bay-area/"
   ]
 }
 </script>
 </head>
-
-<body class="list dark" id="top">
-
-<header class="header">
+<body class="list" id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -135,7 +127,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -150,9 +142,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

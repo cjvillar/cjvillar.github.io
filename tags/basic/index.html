@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/basic/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/basic/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/tags/basic/">
 <noscript>
     <style>
@@ -29,12 +29,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -44,24 +42,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/tags/basic/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="BASIC">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta property="og:title" content="BASIC" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/tags/basic/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="BASIC"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="BASIC">
 
 </head>
-
-<body class="list dark" id="top">
-
-<header class="header">
+<body class="list" id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -90,15 +82,16 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>A few years ago I had the pleasure of going to Cambridge, England for work. While enjoying some free time, a bunch of colleagues and I went to the The Centre for Computing History. Aside from learning about the history of tech from knowledgeable staff, I really enjoyed playing with the old computers. Below is an Apple II. I think it’s clear I had no idea what I was doing....</p>
+    <p>A few years ago I had the pleasure of going to Cambridge, England for work. While enjoying some free time, a bunch of colleagues and I went to the The Centre for Computing History. Aside from learning about the history of tech from knowledgeable staff, I really enjoyed playing with the old computers. Below is an Apple II. I think it’s clear I had no idea what I was doing.
+...</p>
   </div>
-  <footer class="entry-footer">1 min&nbsp;·&nbsp;168 words&nbsp;·&nbsp;Chris</footer>
+  <footer class="entry-footer"><span>1 min</span>&nbsp;·&nbsp;<span>168 words</span>&nbsp;·&nbsp;<span>Chris</span></footer>
   <a class="entry-link" aria-label="post link to Let’s try something BASIC." href="https://www.cjvillarreal.com/posts/basic/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -113,9 +106,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

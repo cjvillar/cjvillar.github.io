@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,12 +28,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -43,22 +41,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
-
-<meta property="og:title" content="SHA, Secure Hash Algorithm 🔒" />
-<meta property="og:description" content="SHA, Secure Hash Algorithm" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/posts/sha/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/images/sha.gif" /><meta property="article:section" content="posts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/images/sha.gif" />
-<meta name="twitter:title" content="SHA, Secure Hash Algorithm 🔒"/>
-<meta name="twitter:description" content="SHA, Secure Hash Algorithm"/>
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/sha/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="SHA, Secure Hash Algorithm 🔒">
+  <meta property="og:description" content="SHA, Secure Hash Algorithm">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="og:image" content="https://www.cjvillarreal.com/images/sha.gif">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.cjvillarreal.com/images/sha.gif">
+  <meta name="twitter:title" content="SHA, Secure Hash Algorithm 🔒">
+  <meta name="twitter:description" content="SHA, Secure Hash Algorithm">
 
 
 <script type="application/ld+json">
@@ -115,10 +109,8 @@
 }
 </script>
 </head>
-
-<body class=" dark" id="top">
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -145,7 +137,7 @@
     <div class="post-description">
       SHA, Secure Hash Algorithm
     </div>
-    <div class="post-meta">4 min&nbsp;·&nbsp;720 words&nbsp;·&nbsp;Chris
+    <div class="post-meta"><span>4 min</span>&nbsp;·&nbsp;<span>720 words</span>&nbsp;·&nbsp;<span>Chris</span>
 
 </div>
   </header> 
@@ -344,7 +336,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -359,9 +351,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

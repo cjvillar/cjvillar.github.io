@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/arrays/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/arrays/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/tags/arrays/">
 <noscript>
     <style>
@@ -29,12 +29,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -44,24 +42,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/tags/arrays/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="Arrays">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta property="og:title" content="Arrays" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/tags/arrays/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Arrays"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arrays">
 
 </head>
-
-<body class="list dark" id="top">
-
-<header class="header">
+<body class="list" id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -91,15 +83,16 @@
   </header>
   <div class="entry-content">
     <p>The Harvard CS50x course is really interesting. One assignment is to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It’s fun to play around and create different “messages”. I wanted to translate my solution code from C to python, so thats what I did here.
-The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string()....</p>
+The CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string(). In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library’s binary file.
+...</p>
   </div>
-  <footer class="entry-footer">3 min&nbsp;·&nbsp;571 words&nbsp;·&nbsp;Chris</footer>
+  <footer class="entry-footer"><span>3 min</span>&nbsp;·&nbsp;<span>571 words</span>&nbsp;·&nbsp;<span>Chris</span></footer>
   <a class="entry-link" aria-label="post link to C to Python" href="https://www.cjvillarreal.com/posts/cs50_arrays/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -114,9 +107,14 @@ The CS50 course provides a C library, CS50, which includes some types that aren�
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

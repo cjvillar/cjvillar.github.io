@@ -4,7 +4,7 @@
     <title>Posts on CJ_VILLARREAL</title>
     <link>https://www.cjvillarreal.com/posts/</link>
     <description>Recent content in Posts on CJ_VILLARREAL</description>
-    <generator>Hugo -- 0.128.2</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://www.cjvillarreal.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -54,8 +54,9 @@
       <link>https://www.cjvillarreal.com/posts/aboutme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/posts/aboutme/</guid>
-      <description>Software Developer / Software Quality Assurance
-As a Software Developer/Tester with over 6 years of experience in commercial settings and academia, I have successfully contributed to the quality assurance and software development efforts across various cross-functional teams. My expertise lies in supporting Engineering teams, ensuring top-notch quality and adherence to industry standards. With a strong background in QA methodologies, I am adept at driving effective testing processes and collaborating with diverse stakeholders to deliver high-quality software products.</description>
+      <description>&lt;p&gt;&lt;img alt=&#34;Me&#34; loading=&#34;lazy&#34; src=&#34;../../images/chris_image_2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Software Developer / Software Quality Assurance&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;As a Software Developer/Tester with over 6 years of experience in commercial settings and academia, I have successfully contributed to the quality assurance and software development efforts across various cross-functional teams. My expertise lies in supporting Engineering teams, ensuring top-notch quality and adherence to industry standards. With a strong background in QA methodologies, I am adept at driving effective testing processes and collaborating with diverse stakeholders to deliver high-quality software products.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Not to bash on Bash.</title>

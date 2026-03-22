@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/cs/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/cs/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/tags/cs/">
 <noscript>
     <style>
@@ -29,12 +29,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -44,24 +42,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/tags/cs/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="CS">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta property="og:title" content="CS" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/tags/cs/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CS"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CS">
 
 </head>
-
-<body class="list dark" id="top">
-
-<header class="header">
+<body class="list" id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -90,15 +82,17 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>CS50x stands as a renowned computer science course offered by Harvard University, and it’s available for free on edX. Officially named “CS50’s Introduction to Computer Science,” this course aims to offer a comprehensive introduction to the world of computer science. It caters to both newcomers without prior programming experience and those who have some background in the field. As someone who’s always eager to learn, I’ve had this course on my to-do list since 2017....</p>
+    <p>
+CS50x stands as a renowned computer science course offered by Harvard University, and it’s available for free on edX. Officially named “CS50’s Introduction to Computer Science,” this course aims to offer a comprehensive introduction to the world of computer science. It caters to both newcomers without prior programming experience and those who have some background in the field. As someone who’s always eager to learn, I’ve had this course on my to-do list since 2017. Finally, this year, I found the time to dive in, and after several months on and off, I’ve successfully completed the course!
+...</p>
   </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;346 words&nbsp;·&nbsp;Chris</footer>
+  <footer class="entry-footer"><span>2 min</span>&nbsp;·&nbsp;<span>346 words</span>&nbsp;·&nbsp;<span>Chris</span></footer>
   <a class="entry-link" aria-label="post link to I Finished Harvard&#39;s CS50x (Computer Science Intro)" href="https://www.cjvillarreal.com/posts/cs50/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -113,9 +107,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

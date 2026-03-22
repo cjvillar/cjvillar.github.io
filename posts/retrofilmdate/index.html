@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,12 +28,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -43,22 +41,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
-
-<meta property="og:title" content="Retro Film Date" />
-<meta property="og:description" content="Nostalgia is big business." />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://www.cjvillarreal.com/posts/retrofilmdate/" />
-<meta property="og:image" content="https://www.cjvillarreal.com/images/campsnap_camera.jpg" /><meta property="article:section" content="posts" />
-
-
-
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="https://www.cjvillarreal.com/images/campsnap_camera.jpg" />
-<meta name="twitter:title" content="Retro Film Date"/>
-<meta name="twitter:description" content="Nostalgia is big business."/>
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/retrofilmdate/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="Retro Film Date">
+  <meta property="og:description" content="Nostalgia is big business.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="og:image" content="https://www.cjvillarreal.com/images/campsnap_camera.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.cjvillarreal.com/images/campsnap_camera.jpg">
+  <meta name="twitter:title" content="Retro Film Date">
+  <meta name="twitter:description" content="Nostalgia is big business.">
 
 
 <script type="application/ld+json">
@@ -115,10 +109,8 @@
 }
 </script>
 </head>
-
-<body class=" dark" id="top">
-
-<header class="header">
+<body id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -145,7 +137,7 @@
     <div class="post-description">
       Nostalgia is big business.
     </div>
-    <div class="post-meta">2 min&nbsp;·&nbsp;214 words&nbsp;·&nbsp;Chris
+    <div class="post-meta"><span>2 min</span>&nbsp;·&nbsp;<span>214 words</span>&nbsp;·&nbsp;<span>Chris</span>
 
 </div>
   </header> 
@@ -155,8 +147,7 @@
 <p><a href="https://www.cjvillarreal.com/RetroFilmDate/">RetroFilmDate</a> Is a simple web app built with Vite that allows users to upload an image and then add a retro-style date stamp to the image. The user interface includes a file input to upload a JPEG, a dropdown to select different fonts for the timestamp, and an image preview section where the stamped image is displayed on a photo I took on the CampSnap camera.</p>
 <p>I originally built this Friday evening just to feed my curiosity. I started with a simple Python script using the Pillow library, which evolved into a PyQt5/Pyinstaller desktop application which then led to a Saturday of turning my Python code into a Vite web application I could host on GitHub pages.</p>
 <p>I hope CampSnap or any nostalgia-hungry enthusiast will enjoy it!</p>
-<p><img loading="lazy" src="../../images/campsnapexample.jpg" alt="CampSnap photo"  />
-</p>
+<p><img alt="CampSnap photo" loading="lazy" src="../../images/campsnapexample.jpg"></p>
 
 
   </div>
@@ -182,7 +173,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -197,9 +188,14 @@
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }

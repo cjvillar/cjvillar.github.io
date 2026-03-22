@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="auto">
+<html lang="en" dir="auto" data-theme="dark">
 
 <head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
 <link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/bash/index.xml">
+<link rel="alternate" type="application/rss+xml" href="https://www.cjvillarreal.com/tags/bash/index.xml" title="rss">
 <link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/tags/bash/">
 <noscript>
     <style>
@@ -29,12 +29,10 @@
 
     </style>
 </noscript>
-  
-    
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -44,24 +42,18 @@
           gtag('js', new Date());
           gtag('config', 'G-4QBFTL72C3');
         }
-      </script>
-    
-  
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/tags/bash/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="Bash">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="website">
 
-<meta property="og:title" content="Bash" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://www.cjvillarreal.com/tags/bash/" />
-
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Bash"/>
-<meta name="twitter:description" content=""/>
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Bash">
 
 </head>
-
-<body class="list dark" id="top">
-
-<header class="header">
+<body class="list" id="top">
+    <header class="header">
     <nav class="nav">
         <div class="logo">
             <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
@@ -92,15 +84,16 @@
   <div class="entry-content">
     <p>My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.
 For example, I can create a dummy data file with 1000 lines:
-for((i=1;i&lt;=1000; i&#43;&#43;)); do echo &#34;data_point_$i&#34; &gt;&gt; data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes....</p>
+for((i=1;i&lt;=1000; i&#43;&#43;)); do echo &#34;data_point_$i&#34; &gt;&gt; data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes. I wouldn’t want to do that manually!
+...</p>
   </div>
-  <footer class="entry-footer">2 min&nbsp;·&nbsp;389 words&nbsp;·&nbsp;Chris</footer>
+  <footer class="entry-footer"><span>2 min</span>&nbsp;·&nbsp;<span>389 words</span>&nbsp;·&nbsp;<span>Chris</span></footer>
   <a class="entry-link" aria-label="post link to Not to bash on Bash." href="https://www.cjvillarreal.com/posts/bash/"></a>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2025 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by
@@ -115,9 +108,14 @@ for((i=1;i&lt;=1000; i&#43;&#43;)); do echo &#34;data_point_$i&#34; &gt;&gt; dat
 </a>
 
 <script>
-    let menu = document.getElementById('menu')
+    let menu = document.getElementById('menu');
     if (menu) {
-        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
         menu.onscroll = function () {
             localStorage.setItem("menu-scroll-position", menu.scrollLeft);
         }
