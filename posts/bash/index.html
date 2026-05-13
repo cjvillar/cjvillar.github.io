@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
-<title>Not to bash on Bash. | CJ_VILLARREAL</title>
+<title>Bash. | CJ_VILLARREAL</title>
 <meta name="keywords" content="bash, terminal">
 <meta name="description" content="Just because you can doesn&#39;t mean you should.">
 <meta name="author" content="Chris">
@@ -43,7 +43,7 @@
         }
       </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/bash/">
   <meta property="og:site_name" content="CJ_VILLARREAL">
-  <meta property="og:title" content="Not to bash on Bash.">
+  <meta property="og:title" content="Bash.">
   <meta property="og:description" content="Just because you can doesn&#39;t mean you should.">
   <meta property="og:locale" content="en_us">
   <meta property="og:type" content="article">
@@ -53,7 +53,7 @@
     <meta property="og:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
-  <meta name="twitter:title" content="Not to bash on Bash.">
+  <meta name="twitter:title" content="Bash.">
   <meta name="twitter:description" content="Just because you can doesn&#39;t mean you should.">
 
 
@@ -71,7 +71,7 @@
     {
       "@type": "ListItem",
       "position":  2 ,
-      "name": "Not to bash on Bash.",
+      "name": "Bash.",
       "item": "https://www.cjvillarreal.com/posts/bash/"
     }
   ]
@@ -81,14 +81,14 @@
 {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Not to bash on Bash.",
-  "name": "Not to bash on Bash.",
+  "headline": "Bash.",
+  "name": "Bash.",
   "description": "Just because you can doesn't mean you should.",
   "keywords": [
     "bash", "terminal"
   ],
-  "articleBody": "My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.\nFor example, I can create a dummy data file with 1000 lines:\nfor((i=1;i\u003c=1000; i++)); do echo \"data_point_$i\" \u003e\u003e data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes. I wouldn’t want to do that manually!\necho $(sed \"$ ! s/.*/'\u0026',/; $ s/.*/'\u0026'/\" data_munging.txt) Aaaand we’re done. So fast.\nRecently, I had the idea to try a Leet Code problem with a bash script. There is really no reason to do this other than curiosity.\nLet’s try Two Sum. The problem is as follows: Given an array of integers (nums) and an integer target, return the indices of the two numbers such that they add up to the target. Assume each input has exactly one solution and you may not use the same element twice.\n#!/bin/bash nums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 for i in ${!nums[@]} do diff=$(($target - ${nums[$i]})) for j in ${!nums[@]} do if [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] then echo \"[$i,$j]\" break 2 fi done done I’ll break down the code below:\nnums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 Initialize an array, nums, and a variable, target.\nfor i in ${!nums[@]} This line begins a for loop that loops through the nums array’s indices.\ndiff=$(($target - ${nums[$i]})) Then we calculate the difference between the target and each element in the nums array.\nfor j in ${!nums[@]} Nested loop to go through the elements in nums.\nif [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] If the difference of target and index “i” is found in the array and the index that it’s found at is not the same as “i”, proceed.\necho \"[$i,$j]\" break 2 Output the indices found and break out of the nested loop.\n[7,11] It works! However, not to bash on Bash, that doesn’t mean you should do it.\n",
-  "wordCount" : "389",
+  "articleBody": "My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.\nFor example, I can create a dummy data file with 1000 lines:\nfor((i=1;i\u003c=1000; i++)); do echo \"data_point_$i\" \u003e\u003e data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes. I wouldn’t want to do that manually!\necho $(sed \"$ ! s/.*/'\u0026',/; $ s/.*/'\u0026'/\" data_munging.txt) Aaaand we’re done. So fast.\nRecently, I had the idea to try a Leet Code problem with a bash script. There is really no reason to do this other than curiosity.\nLet’s try Two Sum. The problem is as follows: Given an array of integers (nums) and an integer target, return the indices of the two numbers such that they add up to the target. Assume each input has exactly one solution and you may not use the same element twice.\n#!/bin/bash nums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 for i in ${!nums[@]} do diff=$(($target - ${nums[$i]})) for j in ${!nums[@]} do if [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] then echo \"[$i,$j]\" break 2 fi done done I’ll break down the code below:\nnums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 Initialize an array, nums, and a variable, target.\nfor i in ${!nums[@]} This line begins a for loop that loops through the nums array’s indices.\ndiff=$(($target - ${nums[$i]})) Then we calculate the difference between the target and each element in the nums array.\nfor j in ${!nums[@]} Nested loop to go through the elements in nums.\nif [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] If the difference of target and index “i” is found in the array and the index that it’s found at is not the same as “i”, proceed.\necho \"[$i,$j]\" break 2 Output the indices found and break out of the nested loop.\n[7,11] It works!\n",
+  "wordCount" : "376",
   "inLanguage": "en",
   "image":"https://www.cjvillarreal.com/images/bash_post.jpg","datePublished": "0001-01-01T00:00:00Z",
   "dateModified": "0001-01-01T00:00:00Z",
@@ -121,6 +121,16 @@
         </div>
         <ul id="menu">
             <li>
+                <a href="https://www.cjvillarreal.com/posts/" title="blog">
+                    <span>blog</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.cjvillarreal.com/projects/" title="projects">
+                    <span>projects</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://www.cjvillarreal.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
@@ -134,12 +144,12 @@
   <header class="post-header">
     <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
-      Not to bash on Bash.
+      Bash.
     </h1>
     <div class="post-description">
       Just because you can doesn&#39;t mean you should.
     </div>
-    <div class="post-meta"><span>2 min</span>&nbsp;·&nbsp;<span>389 words</span>&nbsp;·&nbsp;<span>Chris</span>
+    <div class="post-meta"><span>2 min</span>&nbsp;·&nbsp;<span>376 words</span>&nbsp;·&nbsp;<span>Chris</span>
 
 </div>
   </header> 
@@ -187,7 +197,7 @@ element twice.</p>
 </span></span><span class="line"><span class="cl"><span class="nb">break</span> <span class="m">2</span>
 </span></span></code></pre></div><p>Output the indices found and break out of the nested loop.</p>
 <pre tabindex="0"><code>[7,11]
-</code></pre><p>It works! However, not to bash on Bash, that doesn&rsquo;t mean you should do it.</p>
+</code></pre><p>It works!</p>
 
 
   </div>
@@ -197,13 +207,6 @@ element twice.</p>
       <li><a href="https://www.cjvillarreal.com/tags/bash/">Bash</a></li>
       <li><a href="https://www.cjvillarreal.com/tags/terminal/">Terminal</a></li>
     </ul>
-<nav class="paginav">
-  <a class="prev" href="https://www.cjvillarreal.com/posts/aboutme/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>About Me</span>
-  </a>
-</nav>
 
   </footer>
 </article>

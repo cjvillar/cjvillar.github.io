@@ -2,8 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.cjvillarreal.com/posts/cs50/</loc>
-  </url><url>
     <loc>https://www.cjvillarreal.com/posts/retrofilmdate/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/posts/sha/</loc>
@@ -18,6 +16,36 @@
   </url><url>
     <loc>https://www.cjvillarreal.com/posts/bash/</loc>
   </url><url>
+    <loc>https://www.cjvillarreal.com/categories/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/tags/django/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/tags/fullstack/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/projects/django/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/tags/postgresql/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/categories/projects/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/projects/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/tags/python/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://www.cjvillarreal.com/tags/</loc>
+    <lastmod>2026-01-01T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://www.cjvillarreal.com/tags/apple/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/tags/arrays/</loc>
@@ -30,21 +58,9 @@
   </url><url>
     <loc>https://www.cjvillarreal.com/tags/c/</loc>
   </url><url>
-    <loc>https://www.cjvillarreal.com/categories/</loc>
-  </url><url>
-    <loc>https://www.cjvillarreal.com/</loc>
-  </url><url>
-    <loc>https://www.cjvillarreal.com/tags/cs/</loc>
-  </url><url>
-    <loc>https://www.cjvillarreal.com/tags/cs50/</loc>
-  </url><url>
     <loc>https://www.cjvillarreal.com/tags/cs50x/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/posts/</loc>
-  </url><url>
-    <loc>https://www.cjvillarreal.com/tags/python/</loc>
-  </url><url>
-    <loc>https://www.cjvillarreal.com/tags/</loc>
   </url><url>
     <loc>https://www.cjvillarreal.com/tags/terminal/</loc>
   </url>

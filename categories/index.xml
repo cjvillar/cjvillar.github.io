@@ -6,6 +6,14 @@
     <description>Recent content in Categories on CJ_VILLARREAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://www.cjvillarreal.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Projects</title>
+      <link>https://www.cjvillarreal.com/categories/projects/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://www.cjvillarreal.com/categories/projects/</guid>
+      <description></description>
+    </item>
   </channel>
 </rss>

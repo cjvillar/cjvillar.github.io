@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Full on CJ_VILLARREAL</title>
+    <link>http://localhost:1313/tags/full/</link>
+    <description>Recent content in Full on CJ_VILLARREAL</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/full/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MakerBuddy</title>
+      <link>http://localhost:1313/projects/django/</link>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/django/</guid>
+      <description>A Django 6.0 Social Platform </description>
+    </item>
+  </channel>
+</rss>

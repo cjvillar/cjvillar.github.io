@@ -8,13 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://www.cjvillarreal.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>I Finished Harvard&#39;s CS50x (Computer Science Intro)</title>
-      <link>https://www.cjvillarreal.com/posts/cs50/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/posts/cs50/</guid>
-      <description>Completed CS50x</description>
-    </item>
-    <item>
       <title>Retro Film Date</title>
       <link>https://www.cjvillarreal.com/posts/retrofilmdate/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -22,7 +15,7 @@
       <description>Nostalgia is big business.</description>
     </item>
     <item>
-      <title>SHA, Secure Hash Algorithm 🔒</title>
+      <title>SHA, Secure Hash Algorithm</title>
       <link>https://www.cjvillarreal.com/posts/sha/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/posts/sha/</guid>
@@ -43,7 +36,7 @@
       <description>A lesson from CS50x in C and Python.</description>
     </item>
     <item>
-      <title>ASSEMBLY FUN 💾</title>
+      <title>ASSEMBLY FUN</title>
       <link>https://www.cjvillarreal.com/posts/assembly_fun/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/posts/assembly_fun/</guid>
@@ -59,7 +52,7 @@
 &lt;p&gt;As a Software Developer/Tester with over 6 years of experience in commercial settings and academia, I have successfully contributed to the quality assurance and software development efforts across various cross-functional teams. My expertise lies in supporting Engineering teams, ensuring top-notch quality and adherence to industry standards. With a strong background in QA methodologies, I am adept at driving effective testing processes and collaborating with diverse stakeholders to deliver high-quality software products.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Not to bash on Bash.</title>
+      <title>Bash.</title>
       <link>https://www.cjvillarreal.com/posts/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://www.cjvillarreal.com/posts/bash/</guid>
