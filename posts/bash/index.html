@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>Bash. | CJ_VILLARREAL</title>
 <meta name="keywords" content="bash, terminal">
 <meta name="description" content="Just because you can doesn&#39;t mean you should.">
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.ico">
-<link rel="apple-touch-icon" href="http://localhost:1313/favicon.ico">
-<link rel="mask-icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/bash/">
+<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/posts/bash/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,28 +28,110 @@
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4QBFTL72C3');
+        }
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/bash/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="Bash.">
+  <meta property="og:description" content="Just because you can doesn&#39;t mean you should.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="Bash">
+    <meta property="article:tag" content="Terminal">
+    <meta property="og:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.cjvillarreal.com/images/bash_post.jpg">
+  <meta name="twitter:title" content="Bash.">
+  <meta name="twitter:description" content="Just because you can doesn&#39;t mean you should.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.cjvillarreal.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "Bash.",
+      "item": "https://www.cjvillarreal.com/posts/bash/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Bash.",
+  "name": "Bash.",
+  "description": "Just because you can doesn't mean you should.",
+  "keywords": [
+    "bash", "terminal"
+  ],
+  "articleBody": "My job out of college was working on the UCSC Genome Browser QA team. One of the first things I had to do was get comfortable with the Born again shell (bash). I found it really helpful to have a quiver of one-liners for repetitive tasks.\nFor example, I can create a dummy data file with 1000 lines:\nfor((i=1;i\u003c=1000; i++)); do echo \"data_point_$i\" \u003e\u003e data_munging.txt; done Let’s say I needed to add each entry in an SQL query (for some reason) I’d need to remove the new lines and add a comma as a separator with each data_point in single quotes. I wouldn’t want to do that manually!\necho $(sed \"$ ! s/.*/'\u0026',/; $ s/.*/'\u0026'/\" data_munging.txt) Aaaand we’re done. So fast.\nRecently, I had the idea to try a Leet Code problem with a bash script. There is really no reason to do this other than curiosity.\nLet’s try Two Sum. The problem is as follows: Given an array of integers (nums) and an integer target, return the indices of the two numbers such that they add up to the target. Assume each input has exactly one solution and you may not use the same element twice.\n#!/bin/bash nums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 for i in ${!nums[@]} do diff=$(($target - ${nums[$i]})) for j in ${!nums[@]} do if [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] then echo \"[$i,$j]\" break 2 fi done done I’ll break down the code below:\nnums=(1 22 4 8 10 32 40 3 100 1 89 3 9 0) target=6 Initialize an array, nums, and a variable, target.\nfor i in ${!nums[@]} This line begins a for loop that loops through the nums array’s indices.\ndiff=$(($target - ${nums[$i]})) Then we calculate the difference between the target and each element in the nums array.\nfor j in ${!nums[@]} Nested loop to go through the elements in nums.\nif [[ \"${nums[j]}\" = \"$diff\" \u0026\u0026 $i != $j ]] If the difference of target and index “i” is found in the array and the index that it’s found at is not the same as “i”, proceed.\necho \"[$i,$j]\" break 2 Output the indices found and break out of the nested loop.\n[7,11] It works!\n",
+  "wordCount" : "376",
+  "inLanguage": "en",
+  "image":"https://www.cjvillarreal.com/images/bash_post.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Chris"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.cjvillarreal.com/posts/bash/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CJ_VILLARREAL",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cjvillarreal.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
+            <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="blog">
+                <a href="https://www.cjvillarreal.com/posts/" title="blog">
                     <span>blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/" title="projects">
+                <a href="https://www.cjvillarreal.com/projects/" title="projects">
                     <span>projects</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="tags">
+                <a href="https://www.cjvillarreal.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -60,7 +142,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       Bash.
     </h1>
@@ -122,8 +204,8 @@ element twice.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/bash/">Bash</a></li>
-      <li><a href="http://localhost:1313/tags/terminal/">Terminal</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/bash/">Bash</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/terminal/">Terminal</a></li>
     </ul>
 
   </footer>
@@ -131,7 +213,7 @@ element twice.</p>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by

@@ -2,94 +2,94 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Tags on CJ_VILLARREAL</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://www.cjvillarreal.com/tags/</link>
     <description>Recent content in Tags on CJ_VILLARREAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.cjvillarreal.com/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Django</title>
-      <link>http://localhost:1313/tags/django/</link>
+      <link>https://www.cjvillarreal.com/tags/django/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/django/</guid>
+      <guid>https://www.cjvillarreal.com/tags/django/</guid>
       <description></description>
     </item>
     <item>
       <title>FullStack</title>
-      <link>http://localhost:1313/tags/fullstack/</link>
+      <link>https://www.cjvillarreal.com/tags/fullstack/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/fullstack/</guid>
+      <guid>https://www.cjvillarreal.com/tags/fullstack/</guid>
       <description></description>
     </item>
     <item>
       <title>PostgreSQL</title>
-      <link>http://localhost:1313/tags/postgresql/</link>
+      <link>https://www.cjvillarreal.com/tags/postgresql/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/postgresql/</guid>
+      <guid>https://www.cjvillarreal.com/tags/postgresql/</guid>
       <description></description>
     </item>
     <item>
       <title>Python</title>
-      <link>http://localhost:1313/tags/python/</link>
+      <link>https://www.cjvillarreal.com/tags/python/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/python/</guid>
+      <guid>https://www.cjvillarreal.com/tags/python/</guid>
       <description></description>
     </item>
     <item>
       <title>APPLE</title>
-      <link>http://localhost:1313/tags/apple/</link>
+      <link>https://www.cjvillarreal.com/tags/apple/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/apple/</guid>
+      <guid>https://www.cjvillarreal.com/tags/apple/</guid>
       <description></description>
     </item>
     <item>
       <title>Arrays</title>
-      <link>http://localhost:1313/tags/arrays/</link>
+      <link>https://www.cjvillarreal.com/tags/arrays/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/arrays/</guid>
+      <guid>https://www.cjvillarreal.com/tags/arrays/</guid>
       <description></description>
     </item>
     <item>
       <title>Assembly</title>
-      <link>http://localhost:1313/tags/assembly/</link>
+      <link>https://www.cjvillarreal.com/tags/assembly/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/assembly/</guid>
+      <guid>https://www.cjvillarreal.com/tags/assembly/</guid>
       <description></description>
     </item>
     <item>
       <title>Bash</title>
-      <link>http://localhost:1313/tags/bash/</link>
+      <link>https://www.cjvillarreal.com/tags/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/bash/</guid>
+      <guid>https://www.cjvillarreal.com/tags/bash/</guid>
       <description></description>
     </item>
     <item>
       <title>BASIC</title>
-      <link>http://localhost:1313/tags/basic/</link>
+      <link>https://www.cjvillarreal.com/tags/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/basic/</guid>
+      <guid>https://www.cjvillarreal.com/tags/basic/</guid>
       <description></description>
     </item>
     <item>
       <title>C</title>
-      <link>http://localhost:1313/tags/c/</link>
+      <link>https://www.cjvillarreal.com/tags/c/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/c/</guid>
+      <guid>https://www.cjvillarreal.com/tags/c/</guid>
       <description></description>
     </item>
     <item>
       <title>CS50x</title>
-      <link>http://localhost:1313/tags/cs50x/</link>
+      <link>https://www.cjvillarreal.com/tags/cs50x/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/cs50x/</guid>
+      <guid>https://www.cjvillarreal.com/tags/cs50x/</guid>
       <description></description>
     </item>
     <item>
       <title>Terminal</title>
-      <link>http://localhost:1313/tags/terminal/</link>
+      <link>https://www.cjvillarreal.com/tags/terminal/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/terminal/</guid>
+      <guid>https://www.cjvillarreal.com/tags/terminal/</guid>
       <description></description>
     </item>
   </channel>

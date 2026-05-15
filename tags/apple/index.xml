@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>APPLE on CJ_VILLARREAL</title>
-    <link>http://localhost:1313/tags/apple/</link>
+    <link>https://www.cjvillarreal.com/tags/apple/</link>
     <description>Recent content in APPLE on CJ_VILLARREAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/tags/apple/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.cjvillarreal.com/tags/apple/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Let’s try something BASIC.</title>
-      <link>http://localhost:1313/posts/basic/</link>
+      <link>https://www.cjvillarreal.com/posts/basic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/basic/</guid>
+      <guid>https://www.cjvillarreal.com/posts/basic/</guid>
       <description>Coding with Javascript-emulated Applesoft BASIC.</description>
     </item>
   </channel>

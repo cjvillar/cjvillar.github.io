@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="dark">
 
-<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<head><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 <title>C to Python | CJ_VILLARREAL</title>
 <meta name="keywords" content="CS50x, Arrays, C, Python">
 <meta name="description" content="A lesson from CS50x in C and Python.">
 <meta name="author" content="Chris">
 <link rel="canonical" href="https://canonical.url/to/page">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.ico">
-<link rel="apple-touch-icon" href="http://localhost:1313/favicon.ico">
-<link rel="mask-icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/cs50_arrays/">
+<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/posts/cs50_arrays/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,28 +28,112 @@
 
     </style>
 </noscript>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
+      <script>
+        var doNotTrack = false;
+        if ( true ) {
+          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
+          var doNotTrack = (dnt == "1" || dnt == "yes");
+        }
+        if (!doNotTrack) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-4QBFTL72C3');
+        }
+      </script><meta property="og:url" content="https://www.cjvillarreal.com/posts/cs50_arrays/">
+  <meta property="og:site_name" content="CJ_VILLARREAL">
+  <meta property="og:title" content="C to Python">
+  <meta property="og:description" content="A lesson from CS50x in C and Python.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:tag" content="CS50x">
+    <meta property="article:tag" content="Arrays">
+    <meta property="article:tag" content="C">
+    <meta property="article:tag" content="Python">
+    <meta property="og:image" content="https://www.cjvillarreal.com/images/c_to_python.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.cjvillarreal.com/images/c_to_python.jpg">
+  <meta name="twitter:title" content="C to Python">
+  <meta name="twitter:description" content="A lesson from CS50x in C and Python.">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "Posts",
+      "item": "https://www.cjvillarreal.com/posts/"
+    }, 
+    {
+      "@type": "ListItem",
+      "position":  2 ,
+      "name": "C to Python",
+      "item": "https://www.cjvillarreal.com/posts/cs50_arrays/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "C to Python",
+  "name": "C to Python",
+  "description": "A lesson from CS50x in C and Python.",
+  "keywords": [
+    "CS50x", "Arrays", "C", "Python"
+  ],
+  "articleBody": "The Harvard CS50x course is really interesting. One assignment is to create a program in C that prompts the user for a message and then outputs the text in binary with dark and light emojis representing 0 and 1, respectively. It’s fun to play around and create different “messages”. I wanted to translate my solution code from C to python, so thats what I did here.\nThe CS50 course provides a C library, CS50, which includes some types that aren’t native to C, like string and get_string(). In my C code example below, I will omit the CS50 library so that it’s easier to compile and run without having to link the library’s binary file.\nthe output will look something like this:\n⚫🟡🟡⚫🟡⚫⚫⚫ ⚫🟡🟡⚫⚫🟡⚫🟡 ⚫🟡🟡🟡🟡⚫⚫🟡 Can you guess what it says?\n#include #include const int BITS_IN_BYTE = 8; int arr[8]; void print_bulb(int bit); int main(void) { //get user input of 400 chars and remove newline printf(\"Message: \"); char message [400]; fgets(message, 400, stdin); message[strlen(message)-1] = '\\0'; //loop through each word int n = strlen(message); for (int i = 0; i \u003c n; i++) { int bits = 8; //loop through the ASCII number to convert to binary for (int j = 1; j \u003c= BITS_IN_BYTE; j ++) { int bit = message[i]; message[i] = bit % 2; arr[j] = message[i]; bit = bit / 2; message[i] = bit; bits = bits - 1; } //reverse loop through array for each binary for (int x = 8; x \u003e 0; x --) { print_bulb(arr[x]); } printf(\"\\n\"); } } void print_bulb(int bit) { if (bit == 0) { // Dark emoji printf(\"\\U000026AB\"); } else if (bit == 1) { // Light emoji printf(\"\\U0001F7E1\"); } } And now for my python example:\n\"\"\" Bulbs from cs50 adapted for python \"\"\" import math as m BITS_IN_BYTE = 8 message = input(\"Message:\") # loop through each character for i in message: char = ord(i) arr = [] # put each characters 8 bit conversion in list j = 1 while j \u003c= BITS_IN_BYTE: # calculate the 8 bits of a char bit = char char = bit % 2 bulb = m.trunc(char) # append emoji light if 1 or dark if 0 to arr if bulb == 0: arr.append(\"\\U000026AB\") elif bulb == 1: arr.append(\"\\U0001F7E1\") bit = bit / 2 char = bit j += 1 # print output of arr in reverse on single line # use reverese print because thats how the bits would be represented. print(*arr[::-1], sep=\"\") The above Python code is similar to the C code, however, Python has more tricks up its sleeve.\nPython has a built-in method, bin() which converts input to a binary string. Bin produces binary with an “0b” prefix, which is the Python representation of binary numbers. I remove this by slicing the strings first to characters,[2:], and padding it with zeros using the zfill() method to ensure it has 8 bits.\nTo loop through the bits (zeros and ones) and convert them into the emoji representation I use a shorter syntax called, list comprehension.\nLastly, with the changes above I can remove the math module import since it is not used.\nVoila! A more concise and easier-to-read version:\nmessage = input(\"Message:\") for i in message: binary = bin(ord(i))[2:].zfill(8) # convert to binary and pad with zeros bits = [(\"\\U000026AB\" if bit == \"0\" else \"\\U0001F7E1\") for bit in binary] print(*bits, sep=\"\") the message says ‘hey’\n",
+  "wordCount" : "571",
+  "inLanguage": "en",
+  "image":"https://www.cjvillarreal.com/images/c_to_python.jpg","datePublished": "0001-01-01T00:00:00Z",
+  "dateModified": "0001-01-01T00:00:00Z",
+  "author":{
+    "@type": "Person",
+    "name": "Chris"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.cjvillarreal.com/posts/cs50_arrays/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CJ_VILLARREAL",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.cjvillarreal.com/favicon.ico"
+    }
+  }
+}
+</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
+            <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="http://localhost:1313/posts/" title="blog">
+                <a href="https://www.cjvillarreal.com/posts/" title="blog">
                     <span>blog</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/projects/" title="projects">
+                <a href="https://www.cjvillarreal.com/projects/" title="projects">
                     <span>projects</span>
                 </a>
             </li>
             <li>
-                <a href="http://localhost:1313/tags/" title="tags">
+                <a href="https://www.cjvillarreal.com/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -60,7 +144,7 @@
 
 <article class="post-single">
   <header class="post-header">
-    <div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/posts/">Posts</a></div>
+    <div class="breadcrumbs"><a href="https://www.cjvillarreal.com/">Home</a>&nbsp;»&nbsp;<a href="https://www.cjvillarreal.com/posts/">Posts</a></div>
     <h1 class="post-title entry-hint-parent">
       C to Python
     </h1>
@@ -187,10 +271,10 @@ One assignment is to create a program in C that prompts the user for a message a
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/cs50x/">CS50x</a></li>
-      <li><a href="http://localhost:1313/tags/arrays/">Arrays</a></li>
-      <li><a href="http://localhost:1313/tags/c/">C</a></li>
-      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/cs50x/">CS50x</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/arrays/">Arrays</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/c/">C</a></li>
+      <li><a href="https://www.cjvillarreal.com/tags/python/">Python</a></li>
     </ul>
 
   </footer>
@@ -198,7 +282,7 @@ One assignment is to create a program in C that prompts the user for a message a
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="http://localhost:1313/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by

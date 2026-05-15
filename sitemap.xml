@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/retrofilmdate/</loc>
+    <loc>https://www.cjvillarreal.com/posts/retrofilmdate/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/sha/</loc>
+    <loc>https://www.cjvillarreal.com/posts/sha/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/basic/</loc>
+    <loc>https://www.cjvillarreal.com/posts/basic/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/cs50_arrays/</loc>
+    <loc>https://www.cjvillarreal.com/posts/cs50_arrays/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/assembly_fun/</loc>
+    <loc>https://www.cjvillarreal.com/posts/assembly_fun/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/aboutme/</loc>
+    <loc>https://www.cjvillarreal.com/posts/aboutme/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/bash/</loc>
+    <loc>https://www.cjvillarreal.com/posts/bash/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>https://www.cjvillarreal.com/categories/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>https://www.cjvillarreal.com/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/django/</loc>
+    <loc>https://www.cjvillarreal.com/tags/django/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/fullstack/</loc>
+    <loc>https://www.cjvillarreal.com/tags/fullstack/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/django/</loc>
+    <loc>https://www.cjvillarreal.com/projects/django/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/postgresql/</loc>
+    <loc>https://www.cjvillarreal.com/tags/postgresql/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/projects/</loc>
+    <loc>https://www.cjvillarreal.com/categories/projects/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/projects/</loc>
+    <loc>https://www.cjvillarreal.com/projects/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/python/</loc>
+    <loc>https://www.cjvillarreal.com/tags/python/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>https://www.cjvillarreal.com/tags/</loc>
     <lastmod>2026-01-01T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/apple/</loc>
+    <loc>https://www.cjvillarreal.com/tags/apple/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/arrays/</loc>
+    <loc>https://www.cjvillarreal.com/tags/arrays/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/assembly/</loc>
+    <loc>https://www.cjvillarreal.com/tags/assembly/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/bash/</loc>
+    <loc>https://www.cjvillarreal.com/tags/bash/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/basic/</loc>
+    <loc>https://www.cjvillarreal.com/tags/basic/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/c/</loc>
+    <loc>https://www.cjvillarreal.com/tags/c/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/cs50x/</loc>
+    <loc>https://www.cjvillarreal.com/tags/cs50x/</loc>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>https://www.cjvillarreal.com/posts/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/terminal/</loc>
+    <loc>https://www.cjvillarreal.com/tags/terminal/</loc>
   </url>
 </urlset>
