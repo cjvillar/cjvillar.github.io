@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="dark">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
-<title>MakerBuddy | CJ_VILLARREAL</title>
+<meta name="robots" content="noindex, nofollow">
+<title>Maker-Stack | CJ_VILLARREAL</title>
 <meta name="keywords" content="Django, PostgreSQL, Python, FullStack">
-<meta name="description" content="MakerBuddy is built around projects and parts, not influencer posts.">
+<meta name="description" content="Maker-Stack is built around projects and parts, not influencer posts.">
 <meta name="author" content="">
-<link rel="canonical" href="https://www.cjvillarreal.com/projects/django/">
+<link rel="canonical" href="http://localhost:1313/projects/django/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://www.cjvillarreal.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://www.cjvillarreal.com/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="https://www.cjvillarreal.com/favicon.ico">
-<link rel="apple-touch-icon" href="https://www.cjvillarreal.com/favicon.ico">
-<link rel="mask-icon" href="https://www.cjvillarreal.com/favicon.ico">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon.ico">
+<link rel="apple-touch-icon" href="http://localhost:1313/favicon.ico">
+<link rel="mask-icon" href="http://localhost:1313/favicon.ico">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://www.cjvillarreal.com/projects/django/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/projects/django/">
 <noscript>
     <style>
         #theme-toggle,
@@ -28,110 +28,28 @@
 
     </style>
 </noscript>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-4QBFTL72C3"></script>
-      <script>
-        var doNotTrack = false;
-        if ( true ) {
-          var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
-          var doNotTrack = (dnt == "1" || dnt == "yes");
-        }
-        if (!doNotTrack) {
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-4QBFTL72C3');
-        }
-      </script><meta property="og:url" content="https://www.cjvillarreal.com/projects/django/">
-  <meta property="og:site_name" content="CJ_VILLARREAL">
-  <meta property="og:title" content="MakerBuddy">
-  <meta property="og:description" content="MakerBuddy is built around projects and parts, not influencer posts.">
-  <meta property="og:locale" content="en_us">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="projects">
-    <meta property="article:published_time" content="2026-01-01T00:00:00+00:00">
-    <meta property="article:modified_time" content="2026-01-01T00:00:00+00:00">
-    <meta property="article:tag" content="Django">
-    <meta property="article:tag" content="PostgreSQL">
-    <meta property="article:tag" content="Python">
-    <meta property="article:tag" content="FullStack">
-    <meta property="og:image" content="https://www.cjvillarreal.com/images/projects/makerbuddy_1.jpg">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://www.cjvillarreal.com/images/projects/makerbuddy_1.jpg">
-  <meta name="twitter:title" content="MakerBuddy">
-  <meta name="twitter:description" content="MakerBuddy is built around projects and parts, not influencer posts.">
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position":  1 ,
-      "name": "Projects",
-      "item": "https://www.cjvillarreal.com/projects/"
-    }, 
-    {
-      "@type": "ListItem",
-      "position":  2 ,
-      "name": "MakerBuddy",
-      "item": "https://www.cjvillarreal.com/projects/django/"
-    }
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": "MakerBuddy",
-  "name": "MakerBuddy",
-  "description": "MakerBuddy is built around projects and parts, not influencer posts.",
-  "keywords": [
-    "Django", "PostgreSQL", "Python", "FullStack"
-  ],
-  "articleBody": "Problem GitHub is for code, Instagram and Reddit are full of noise. There’s no dedicated place to share a build: the prototype stage, the components, and the steps to actually make it.\nSolution MakerBuddy provides makers one place for everything: project pages, component lists, and a public feed to share/discover builds.\nLinks Live Site: View Project GitHub: Source Code Tech Stack Frontend: Django Templates + custom CSS Backend: Django 6.0 (ORM, class-based views, AllAuth, tasks) Database: PostgreSQL hosted on Railway Media Storage: Cloudflare R2 Deployment: Docker + Gunicorn on Railway CI: GitHub Actions Preview (Parts List, Dark Mode) Challenges \u0026 Lessons Learned Django 6.0 has a lot of new additions. I used the built-in CSP to protect against XSS. Template partials cleaned up repetitive code. Background tasks handle populating the parts list data without breaching vendor API terms. R2 + Django + Railway. Setting up Cloudflare with Railway was straightforward. The one mild annoyance was replacing my DNS provider’s nameservers with Cloudflare’s, but the added features made it worth the effort. Test discipline matters from day one. I started the accounts app with good coverage. I’d bring that same rigor to the rest of the project apps from the start next time. Future Improvements Add more distributors to live component pricing. Expand social logins via AllAuth. Project ranking for better discovery. Takeaways Skills gained: Learned the latest Django offerings and how to release with Railway and Cloudflare R2. Problems solved: I now have a platform I can share with anyone who wants to document and show off their hardware projects. Why it matters: MakerBuddy keeps my Django skills current with real infrastructure decisions and a live service. ",
-  "wordCount" : "277",
-  "inLanguage": "en",
-  "image":"https://www.cjvillarreal.com/images/projects/makerbuddy_1.jpg","datePublished": "2026-01-01T00:00:00Z",
-  "dateModified": "2026-01-01T00:00:00Z",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://www.cjvillarreal.com/projects/django/"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "CJ_VILLARREAL",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://www.cjvillarreal.com/favicon.ico"
-    }
-  }
-}
-</script>
 </head>
 <body id="top">
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://www.cjvillarreal.com/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
+            <a href="http://localhost:1313/" accesskey="h" title="CJ_VILLARREAL (Alt + H)">CJ_VILLARREAL</a>
             <div class="logo-switches">
             </div>
         </div>
         <ul id="menu">
             <li>
-                <a href="https://www.cjvillarreal.com/posts/" title="blog">
+                <a href="http://localhost:1313/posts/" title="blog">
                     <span>blog</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.cjvillarreal.com/projects/" title="projects">
+                <a href="http://localhost:1313/projects/" title="projects">
                     <span>projects</span>
                 </a>
             </li>
             <li>
-                <a href="https://www.cjvillarreal.com/tags/" title="tags">
+                <a href="http://localhost:1313/tags/" title="tags">
                     <span>tags</span>
                 </a>
             </li>
@@ -144,29 +62,29 @@
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      MakerBuddy
+      Maker-Stack
     </h1>
     <div class="post-description">
-      MakerBuddy is built around projects and parts, not influencer posts.
+      Maker-Stack is built around projects and parts, not influencer posts.
     </div>
     <div class="post-meta"><span title='2026-01-01 00:00:00 +0000 UTC'>January 1, 2026</span>
 
 </div>
   </header> 
 <figure class="entry-cover">
-        <img loading="eager" src="https://www.cjvillarreal.com/images/projects/makerbuddy_1.jpg" alt="MakerBuddy project feed screenshot">
+        <img loading="eager" src="http://localhost:1313/images/projects/makerbuddy_1.jpg" alt="Maker-Stack project feed screenshot">
         
 </figure>
   <div class="post-content"><h2 id="problem">Problem<a hidden class="anchor" aria-hidden="true" href="#problem">#</a></h2>
 <p>GitHub is for code, Instagram and Reddit are full of noise. There&rsquo;s no dedicated place to share a build: the prototype stage, the components, and the steps to actually make it.</p>
 <hr>
 <h2 id="solution">Solution<a hidden class="anchor" aria-hidden="true" href="#solution">#</a></h2>
-<p>MakerBuddy provides makers one place for everything: project pages, component lists, and a public
+<p>Maker-Stack provides makers one place for everything: project pages, component lists, and a public
 feed to share/discover builds.</p>
 <hr>
 <h2 id="links">Links<a hidden class="anchor" aria-hidden="true" href="#links">#</a></h2>
 <ul>
-<li>Live Site: <a href="https://makerbuddy.cjvillarreal.com/">View Project</a></li>
+<li>Live Site: <a href="https://maker-stack.com/">View Project</a></li>
 <li>GitHub: <a href="https://github.com/cjvillar/Maker_Buddy">Source Code</a></li>
 </ul>
 <hr>
@@ -181,7 +99,7 @@ feed to share/discover builds.</p>
 </ul>
 <hr>
 <h2 id="preview-parts-list-dark-mode">Preview (Parts List, Dark Mode)<a hidden class="anchor" aria-hidden="true" href="#preview-parts-list-dark-mode">#</a></h2>
-<p><img alt="MakerBuddy public feed" loading="lazy" src="/images/projects/makerbuddy_2.jpg"></p>
+<p><img alt="Maker-Stack public feed" loading="lazy" src="/images/projects/makerbuddy_2.jpg"></p>
 <hr>
 <h2 id="challenges--lessons-learned">Challenges &amp; Lessons Learned<a hidden class="anchor" aria-hidden="true" href="#challenges--lessons-learned">#</a></h2>
 <ul>
@@ -201,7 +119,7 @@ feed to share/discover builds.</p>
 <ul>
 <li><strong>Skills gained:</strong> Learned the latest Django offerings and how to release with Railway and Cloudflare R2.</li>
 <li><strong>Problems solved:</strong> I now have a platform I can share with anyone who wants to document and show off their hardware projects.</li>
-<li><strong>Why it matters:</strong> MakerBuddy keeps my Django skills current with real infrastructure decisions and a live service.</li>
+<li><strong>Why it matters:</strong> Maker-Stack keeps my Django skills current with real infrastructure decisions and a live service.</li>
 </ul>
 <hr>
 
@@ -210,17 +128,17 @@ feed to share/discover builds.</p>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="https://www.cjvillarreal.com/tags/django/">Django</a></li>
-      <li><a href="https://www.cjvillarreal.com/tags/postgresql/">PostgreSQL</a></li>
-      <li><a href="https://www.cjvillarreal.com/tags/python/">Python</a></li>
-      <li><a href="https://www.cjvillarreal.com/tags/fullstack/">FullStack</a></li>
+      <li><a href="http://localhost:1313/tags/django/">Django</a></li>
+      <li><a href="http://localhost:1313/tags/postgresql/">PostgreSQL</a></li>
+      <li><a href="http://localhost:1313/tags/python/">Python</a></li>
+      <li><a href="http://localhost:1313/tags/fullstack/">FullStack</a></li>
     </ul>
   </footer>
 </article>
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://www.cjvillarreal.com/">CJ_VILLARREAL</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">CJ_VILLARREAL</a></span> · 
 
     <span>
         Powered by

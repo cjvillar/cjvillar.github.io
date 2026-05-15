@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>FullStack on CJ_VILLARREAL</title>
-    <link>https://www.cjvillarreal.com/tags/fullstack/</link>
+    <link>http://localhost:1313/tags/fullstack/</link>
     <description>Recent content in FullStack on CJ_VILLARREAL</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Jan 2026 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://www.cjvillarreal.com/tags/fullstack/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/fullstack/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>MakerBuddy</title>
-      <link>https://www.cjvillarreal.com/projects/django/</link>
+      <title>Maker-Stack</title>
+      <link>http://localhost:1313/projects/django/</link>
       <pubDate>Thu, 01 Jan 2026 00:00:00 +0000</pubDate>
-      <guid>https://www.cjvillarreal.com/projects/django/</guid>
-      <description>MakerBuddy is built around projects and parts, not influencer posts.</description>
+      <guid>http://localhost:1313/projects/django/</guid>
+      <description>Maker-Stack is built around projects and parts, not influencer posts.</description>
     </item>
   </channel>
 </rss>
